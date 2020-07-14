@@ -26,11 +26,11 @@
             android:layout_height="wrap_content"
             android:text="0"
             android:textAlignment="textEnd"
-            android:textSize="48sp" />
+            android:textSize="64sp" />
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -39,16 +39,51 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/buttonClear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/circlebutton"
+                        android:text="C"
+                        android:textColor="#1C1C1C"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/buttonPlusOrMinus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/circlebutton"
+                        android:text="+/-"
+                        android:textColor="#1C1C1C"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/buttonPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/circlebutton"
+                        android:text="%"
+                        android:textColor="#1C1C1C"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/buttonDivide"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@drawable/circlebutton"
-                        android:text="C"
-                        android:textColor="#1C1C1C"
+                        android:backgroundTint="#FF9500"
+                        android:text="/"
+                        android:textColor="#FFFFFF"
                         android:textSize="24sp" />
                 </LinearLayout>
             </TableRow>
